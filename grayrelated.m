@@ -1,6 +1,12 @@
 function [coefficient] = grayrelated(data)
-    %返回一个行向量，表示每一列与最后一列的关联度
-    %输入为一个矩阵，最后一列为参考序列
+% This fuction is to get linear correlation coefficient about independent variable and dependent variable
+
+% Output:
+% 	coefficient : linear correlation coefficient
+
+% Input:
+% 	data : data source
+
     [row, col] = size(data);
     coefficient = zeros(1, col-1);
     range = zeros(1, col);
